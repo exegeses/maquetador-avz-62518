@@ -10,8 +10,10 @@
 > Código: 62518 |  
 > sensei: Marcos Pinardi |
 
+--- 
 
-## Aprende a crear interfaces web con los dos lenguajes que constituyen la esencia de la red. Domina herramientas avanzadas de maquetado, incorpora efectos, animaciones y estilos para realizar webs impactantes.
+## Aprende a crear interfaces web con los dos lenguajes que constituyen la esencia de la red.   
+## Domina herramientas avanzadas de maquetado, incorpora efectos, animaciones y estilos para realizar webs impactantes.
 
 
 
