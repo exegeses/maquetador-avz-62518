@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 600px;
+    margin: auto;
+    background-color: #cdfedf;
+    border: 1px solid #999;
+}
+
+/* agrupamiento */
+#verde, #azul, #naranja{
+    width: 200px;
+    height: 120px;
+}
+
+#verde{
+    background-color: #55ff6c;
+    margin: 50px;
+}
+#azul{
+    background-color: #5580ff;
+    margin: 0px auto;
+}
+#naranja{
+    background-color: #ffc155;
+    margin: 32px 0px 0px 78px;
+}
