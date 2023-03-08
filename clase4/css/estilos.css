@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* globales */
+body{
+    font-family: Barlow, sans-serif;
+    font-weight: 300;
+    color: #0C0809;
+}
+a{
+    text-decoration: none;
+}
+
+/* header */
+header{
+    height: 640px;
+    background-color: #FFC61A;
+    background-image: url(../imgs/hero-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: center 0;
+}
+    /* top-container */
+    #top-container{
+        width: 1024px;
+        margin: auto;
+        height: 104px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo{
+        font-size: 24px;
+        font-weight: 400;
+        color: #FFC61A;
+    }
+        #logo span{
+            color: #fff;
+        }
+        #logo img{
+            vertical-align: middle;
+            margin-right: 12px;
+        }
+
+    #top-container nav a{
+        font-size: 20px;
+        color: #fff;
+        padding: 12px;
+        font-weight: 400;
+        transition: 300ms;
+    }
+    #top-container nav a:hover{
+        color: #FFC61A;
+    }
+
+    /* cotenido-header */
+    #contenido-header{
+        width: 700px;
+        margin: 24px auto 0px auto;
+        text-align: center;
+    }
+        #contenido-header h1{
+            color: #fff;
+            font-size: 24px;
+        }
+            #contenido-header h1 span{
+                color: #FFC61A;
+            }
+            #contenido-header a{
+                font-size: 32px;
+                font-weight: 600;
+                color: #FFC61A;
+                margin: 12px 0px 40px 0px;
+                display: inline-block; /* para que acepte margin */
+            }
