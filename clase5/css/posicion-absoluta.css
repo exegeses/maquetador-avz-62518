@@ -1,0 +1,29 @@
+body{
+    background-color: #1e2b32;
+    width: 800px;
+    margin: auto;
+}
+article{
+    width: 150px;
+    height: 150px;
+}
+    #verde{
+        background-color: #9af5bf;
+    }
+    #amarillo{
+        background-color: #f5f59a;
+        position: absolute;
+        /* top: 0px; */
+        left: -100px;
+        bottom: 0px;
+        /*right: -75px;*/
+    }
+    #rojo{
+        background-color: #f59a9a;
+        position: absolute;
+        left: -50px;
+        transition: .5s;
+    }
+    #rojo:hover{
+        left: 0px;
+    }

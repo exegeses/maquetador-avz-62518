@@ -1,0 +1,23 @@
+body{
+    background-color: #1e2b32;
+    width: 800px;
+    margin: auto;
+}
+article{
+    width: 150px;
+    height: 150px;
+}
+#verde{
+    background-color: #9af5bf;
+}
+#amarillo{
+    background-color: #f5f59a;
+    position: relative;
+    top: 150px;
+    left: 150px;
+   /* bottom: 100px;
+    right: 50px;*/
+}
+#rojo{
+    background-color: #f59a9a;
+}
