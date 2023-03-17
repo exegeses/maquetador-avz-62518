@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* globales */
+body{
+    font-family: Raleway, sans-serif;
+    font-size: 1.3em;
+    color: #3c3c3c;
+    background-color: #121212;
+}
+main{
+    background-color: #f3f3f3;
+    min-height: 600px;
+    width: 768px;
+    margin: auto;
+    padding: 24px;
+}
+    main p {
+        display: flex;
+        padding-top: 24px;
+    }
+        main p img{
+            display: inline-block;
+            margin: 0px 24px;
+        }

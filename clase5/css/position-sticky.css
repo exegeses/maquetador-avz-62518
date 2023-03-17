@@ -22,7 +22,7 @@ header{
     text-align: center;
 }
     header nav{
-        height: 100px;
+        min-height: 100px;
         background-color: #e45826;
         position: sticky;
         top: 0px;
