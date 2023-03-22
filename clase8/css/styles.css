@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* globales */
+body{
+    font-family: Barlow, sans-serif;
+    font-weight: 300;
+    color: #3c3c3c;
+    background-color: #3D4043;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+header{
+    background-color: #E29086;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    header a{
+        color: #fff;
+        font-weight: 600;
+    }
+    /* logo */
+    #logo{
+        font-size: 24px;
+    }
+        #logo img{
+            vertical-align: middle;
+            margin: 0px 12px;
+        }
+
+    /* navegación */
+    header nav a{
+        font-size: 20px;
+        padding: 10px;
+    }
+    /* hamburger */
+    #hamburger{
+        display: none;
+        /*  ocultamos la imagen */
+    }
+
+/*######### media queries ########*/
+/*### mobile | tablet sm ###*/
+@media screen and ( max-width: 768px ){
+
+    header{
+        display: block; /* sobreescribe el display flex */
+    }
+        #logo img{
+            margin: 8px 12px;
+        }
+
+        header nav{
+            background-color: #E29086;
+            transform: translateY( calc(-220px - 80px) );
+            transition: .5s;
+        }        
+        header nav a{
+            display: block;
+            text-align: center;
+            transition: .5s;
+        }
+        header nav a:hover{
+            background-color: #e08276;
+        }
+        /* hamburger */
+        #hamburger{
+            display: block;
+            position: absolute;
+            top: 24px;
+            right: 12px;
+            filter: invert();
+            cursor: pointer;
+        }
+    .show-menu{
+        transform: translateY(0px);
+    }
+}
