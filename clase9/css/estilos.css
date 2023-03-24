@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* globales */
+body{
+    width: 600px;
+    margin: 32px auto;
+    font-family: Barlow, sans-serif;
+    font-weight: 300;
+    color: #fff;
+    background-color: #3D4043;
+}
+
+    nav{
+        margin: 24px;
+    }
+        nav a{
+            text-decoration: none;
+            color: #3c3c3c;
+            background-color: #eedfc5;
+            padding: 12px 32px;
+            border-radius: 12px;
+            transition: 500ms;
+        }
+        nav a:hover{
+            background-color: #edbb63;
+        }
+    
+    #caja{
+        width: 200px;
+        height: 200px;
+        background-color: #7c7c7c;
+        border-radius: 12px;
+        transform: scale(1) rotate(0deg);
+        transition: 500ms;
+    }
+
+    .verde{
+        background-color: #6f4 !important;
+    }
+    .naranja{
+        background-color: #ff9544 !important;
+    }
+
+    .cambio{
+        transform: scale( 0.75 ) rotate(45deg) !important;
+        background-color: #fff !important;
+    }
