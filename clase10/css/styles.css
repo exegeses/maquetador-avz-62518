@@ -10,6 +10,8 @@ body{
     font-weight: 300;
     color: #3c3c3c;
     background-color: #3D4043;
+    max-width: 1024px;
+    margin: auto;
 }
 a{
     text-decoration: none;
@@ -161,4 +163,11 @@ main{
             margin-bottom: 32px;
         }
     /* sección servicios */
+    #servicios article{
+        width: 312px;
+    }
+    #servicios article img{
+        width: 64px;
+        height: 64px;
+    }
 }
