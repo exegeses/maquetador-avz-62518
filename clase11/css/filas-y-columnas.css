@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+    #container{
+        width: 1024px;
+        margin: auto;
+        background-color: #ccc;
+        height: 525px;
+        padding: 12px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 200px 300px;
+    }
+    #container article{
+        background-color: #c0eb7f;
+        border: 1px solid #666;
+    }

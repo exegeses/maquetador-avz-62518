@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #3D4043;
+}
+
+#container{
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    /*  minmax( valorMinimo, valorMáximo )  */
+    /* grid-template-columns: minmax(500px, 800px);*/
+    /* grid-template-columns: minmax(300px, 1fr) 1fr; */
+    /* grid-template-columns: minmax(300px, 1fr) 1fr 1fr; */
+    /* grid-template-columns: 1fr minmax(400px, 1fr) 1fr; */
+
+
+    /* auto-fill | auto-fit */
+    /* auto-fill: completa la fila con tantas columnas como entren en el contenedor  */
+     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+
+    background-color: #ff0;
+}
+
+    #container article{
+        background-color: #f88235;
+        padding: 8px;
+        border: 1px solid #d6d6d6;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        transition: .5s;
+    }
+    #container article:hover{
+        background-color: #fb9358;
+    }
