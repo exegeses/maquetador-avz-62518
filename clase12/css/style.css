@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e3e3e3;
+    color: #102F49;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+header,
+footer{
+    max-width: 1200px;
+    height: 100px;
+    background-color: #102F49;
+    margin: auto;
+    display: grid; /* yo le pondría display:flex */
+    align-items: center;
+}
+    header a,
+    footer a{
+        color: #ffea8d;
+    }
+        header img,
+        footer img{
+            vertical-align: middle;
+            margin: 0px 12px;
+        }
+
+/* main */
+main{
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-rows: auto 160px;
+}
+    /* sección contenido */
+    #contenido{
+        background-color: #f4f4f4;
+        padding: 20px;
+        /* grid-column: 1/5; */
+        grid-column: span 4;
+        column-gap: 24px;
+    }
+        #contenido article{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 80px 1fr;
+            column-gap: 24px;
+        }
+            #contenido article img{
+                padding-bottom: 24px;
+                grid-column: span 2;
+                grid-row: span 2;
+                width: 100%;
+            }
+
+     /* sección notas - lateral */
+    #notas{
+        background-color: #974343;
+    }
+        #notas article{
+            color: #f4f4f4;
+            text-align: center;
+            margin-top: 56px;
+        }
+
+    /* sección promos - inferior */
+    #promos{
+        padding: 24px;
+        background-color: #fff;
+        /* grid-column: span 5;*/
+        grid-column: 1/-1; /* que ocupe toda la grilla */
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 24px;
+    }
+        #promos article{
+            background-color: #626974;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+/* footer */
+footer{
+    height: 160px;
+    /* el resto de los atributos
+     están agrupados con el header
+    */
+}
+/*    footer a{
+        color: #ffea8d;
+    }
+        footer img{
+            vertical-align: middle;
+            margin: 0px 12px;
+        }
+
+ */
+
+
+/*#######   media queries 768 ######*/
+@media screen and (max-width: 768px) {
+    main{
+        display: block;
+    }
+        #notas article{
+            margin-top: 0px;
+            padding: 24px 0px;
+        }
+
+        #promos{
+            display: block;
+        }
+            #promos article{
+                padding: 24px;
+                margin: 12px 0px;
+
+            }
+}
