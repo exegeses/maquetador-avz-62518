@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transitions</title>
+    <link rel="stylesheet" href="css/notas.css">
+</head>
+<body>
+    <h1>Using CSS transitions</h1>
+
+    <ul>
+        <li>
+            CSS transitions proveen la manera de controlar la velocidad de uno o varios cambios de estado de una o varias propiedades CSS.
+        </li>
+        <li>
+            En vez de implementar los cambios de estado de manera inmediata, podemos implementarlos durante un lapso (o incluso luego de un lapso).
+            Por ejemplo, si cambiamos el color de un elemento de un color A a un color B, sin una transición, el cambio es inmediato.
+            <br>
+            Pero con CSS transitions, los cambios ocurren a intervalos que pueden seguir una curva de aceleración que podemos personalizar.
+        </li>
+        <li>
+            Las CSS transitions nos dejan decidir
+            <ul>
+                <li><em>qué propiedades modificar</em> (listándolas de manera explçicita),</li>
+                <li><em>cuándo comenzará la transición</em> (seteando el delay),</li>
+                <li><em>cuánto tiempo llevará la transición</em> (seteando la duración),</li>
+                <li> y <em>cómo sucederá la transición</em> (seteando la función de aceleración).<br>
+                    <a href="https://easings.net/" target="_blank">referencia</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <section id="definiciones">
+        <div id="izq">
+            <span id="tprop">transition-property</span>
+            <span id="tdur">transition-duration</span>
+            <span id="ttimfunc">transition-timing-function</span>
+            <span id="tdel">transition-delay</span>
+        </div>
+        <div id="der">
+            <span id="ttprop">Qué propiedad animar</span>
+            <span id="ttdur">cuánto tiempo va a durar</span>
+            <span id="tttimfunc">qué aceleración va a tener</span>
+            <span id="ttdel">si va a tener un delay al inicio</span>
+        </div>
+    </section>
+
+
+</body>
+</html>
