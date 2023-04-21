@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&family=Lobster+Two&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    color: #391a1e;
+    height: 100vh;
+    /* #fff5f5  #ffa9b3  */
+    background: rgb(255,245,245);
+    background: linear-gradient(180deg, rgba(255,245,245,1) 0%, rgba(255,169,179,1) 100%);
+}
+h1{
+    font-family: 'Lobster Two', cursive;
+    font-size: 80px;
+}
+a{
+    text-decoration: none;
+    color: #391a1e;
+}
+header{
+    width: 1024px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+    #top-left{
+        position: absolute;
+        top:-24px;
+        left: 0px;
+        width: 176px;
+        opacity: 0;
+        animation: fade-in 500ms forwards;
+    }
+    #top-right{
+        position: absolute;
+        top: -32px;
+        right: 0px;
+        width: 176px;
+        opacity: 0;
+        animation: fade-in 500ms 50ms forwards;
+    }
+    #sol{
+        position: absolute;
+        width: 600px;
+        top: 64px;
+        left: 224px;
+        z-index: 10;
+        opacity: 0;
+        animation: fade-in 500ms 250ms forwards;
+    }
+    #arco{
+        position: absolute;
+        width: 680px;
+        left: 180px;
+        top: 180px;
+        z-index: 20;
+        opacity: 0;
+        animation: fade-in 500ms 750ms forwards;
+    }
+    #boy{
+        position: absolute;
+        width: 280px;
+        top: 320px;
+        left: 376px;
+        z-index: 30;
+        opacity: 0;
+        animation: fade-in 500ms 1.25s forwards;
+    }
+/* sparks & leaves */
+    #fw1{
+        width: 280px;
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        z-index: 12;
+        opacity: 0;
+        animation: fireworks 5s 5s infinite;
+    }
+    #fw2{
+        width: 192px;
+        position: absolute;
+        top: 84px;
+        right: 40px;
+        z-index: 12;
+        opacity: 0;
+        animation: fireworks 5s 6s infinite;
+    }
+    main{
+        padding: 32px 0px;
+        background-color: #ffa9b3;
+    }
+
+    #contenido{
+        width: 1024px;
+        margin: auto;
+    }
+        #contenido span{
+            margin: 32px;
+            padding: 8px 32px;
+            display: inline-block;
+            background-color: #FF756E;
+        }
+    footer{
+        padding: 32px;
+        height: 160px;
+        width: 100%;
+        background-color: #ffa9b3;
+        background-image: url(../imgs/bg-waves.png);
+        background-size: contain;
+    }
+        footer section{
+            width: 1024px;
+            margin: auto;
+        }
+        
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes fireworks {
+    from{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    40%,60%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{
+        opacity: 0;
+    }
+}

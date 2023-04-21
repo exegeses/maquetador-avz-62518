@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Six Caps';
+    font-size: 3em;
+    background-color: #F0EFEB;
+    color: #fff;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+}
+    header, main, #container{
+        width: 1024px;
+        margin: auto;
+    }
+    header{
+        color: #3c3c3c;
+        font-size: 1.2em;
+        transform: scaleY(0);
+        animation: scaleY 500ms 1s forwards;
+    }
+    main{
+        position: relative;
+        text-shadow: 0px 0px 2px #999;
+    }
+        #yellow{
+            background-color: #F8D96C;
+            width: 50vw; /* viewport with */
+            height: 50vw;
+            border-radius: 50%;
+            position: absolute;
+            top: -14vw;
+            right: -7vw;
+            z-index: -1;
+            transform: scale(0);
+            animation: zoom-in 500ms forwards;
+        }
+    #sky{
+        background-color: #6FB0F9;
+        width: 100vw;
+        height: 100vw;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: -45%;
+        z-index: -1;
+        transform: scale(0);
+        animation: zoom-in 500ms 300ms forwards;
+    }
+
+    h2{
+        text-align: right;
+        font-size: 3em;
+        border-top: 1px solid #fff;
+        font-weight: 300;
+        opacity: 0;
+        animation: up-right 1s 1s forwards;
+    }
+
+    #info{
+        border-top: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+        transform: scaleX(0);
+        animation: stretch 600ms 1.2s forwards;
+    }
+    #info #date{
+        font-size: 2.5em;
+        opacity: 0;
+        animation: up-right2 500ms 1.5s forwards;
+    }
+    #info #city{
+        font-size: 1.5em;
+        padding-right: 64px;
+        opacity: 0;
+        animation: up-right2 500ms 1.8s forwards;
+    }
+    #container{
+        margin-top: 64px;
+        display: flex;
+        justify-content: space-between;
+    }
+        #card{
+            width: 7em;
+            height: 9em;
+            border-radius: 16px;
+            background-color: #F1AFB8;
+            box-shadow: 0px 0px 2px #dd96a1;
+            justify-self: start;
+            padding: 1em;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            opacity: 0;
+            transform: translateX(-500px) rotate(5deg);
+            animation: rotate-in 1s 2s forwards;
+        }
+        #card article{
+            color: #fff;
+            width: 100%;
+            text-shadow: 0px 0px 2px #C03656;
+        }
+        #card a{
+            display: block;
+            color: #C03656;
+            font-size: 3em;
+            width: 100%;
+        }
+    h1 {
+        border-top: 1px solid #fff;
+        font-size: 3.5em;
+        font-weight: 300;
+        opacity: 0;
+        animation: up-right 1s 2s forwards;
+    }
+
+
+
+
+/*###  animaciones  ###*/
+@keyframes scaleY {
+    from{
+        transform: scaleY(0);
+    }
+    to{
+        transform: scaleY(1);
+    }
+}
+@keyframes zoom-in {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes up-right{
+    from{
+        transform: translateY(64px) rotate(5deg);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes stretch{
+    from{
+        transform: scaleX(.25);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+@keyframes up-right2{
+    from{
+        transform: translateY(40px) rotate(-5deg);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+@keyframes rotate-in {
+    from{
+        opacity: 0;
+        transform: translateX(-500px) rotate(-180deg);
+    }
+    to{
+        transform: translateX(0px) rotate(5deg);
+        opacity: 1;
+    }
+}

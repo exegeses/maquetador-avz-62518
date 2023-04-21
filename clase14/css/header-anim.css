@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: #142123;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    /*width: 100vw;*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+    header::before{
+        content: "";
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        background-image: url(../imgs/desktop.jpg);
+        background-size: cover;
+        background-position: center 0px;
+        background-color: #142123;
+        animation-name: slide-bgi;
+        animation-duration: 2s;
+    }
+    header::after{
+        content: "";
+        background-color: #F9FCFF;
+        height: 120px;
+        width: 120%;
+        position: absolute;
+        z-index: -1;
+        bottom: -40px;
+        transform: rotate(-3deg);
+    }
+    header section{
+        /* background-color: #d88484; */
+        width: 480px;
+        height: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        header section img{
+            margin: 32px 0px 12px 0px;
+            width: 94px;
+            height: 94px;
+            opacity: 0;
+            animation: slide-in-img 2s ease 2s forwards;
+
+        }
+        header section h1{
+            width: 100%;
+            opacity: 0;
+            animation: slide-in-txt 1s ease 3.5s forwards;
+        }
+        header section span{
+            opacity: 0;
+            animation: slide-in-txt 1s ease 4.5s forwards;
+        }
+
+        header section a{
+            display: block;
+            width: 132px;
+            margin: 12px auto;
+            padding: 12px 0px;
+            background-color: #d88484;
+            color: #fff;
+            font-weight: 600;
+            border: 1px solid #ebabab;
+            border-radius: 8px;
+            box-shadow: 0 0 4px #fff;
+            transition: 500ms;
+            opacity: 0;
+            animation: slide-in-txt 1s ease 5s forwards, blink 3s infinite;
+        }
+        header section a:hover{
+            box-shadow: 0 0 12px #fff;
+        }
+
+/*##########  Animaciones ###########*/
+    @keyframes slide-bgi {
+        from{
+            background-position: center -200px;
+            background-color: #142123;
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+            background-position: center 0px;
+            background-color: #142123;
+        }
+    }
+
+    @keyframes slide-in-img {
+        from{
+            transform: translateY(-56px) scale(150%);
+            opacity: 0;
+        }
+        to{
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-txt {
+        from{
+            transform: translateY(-24px) scale(120%);
+            filter: blur(24px);
+            opacity: 0;
+        }
+        to{
+            transform: none;
+            opacity: 1;
+        }
+    }
+    @keyframes blink {
+        from{
+            box-shadow: 0 0 0 #fff;
+        }
+        50%{
+            box-shadow: 0 0 6px #fff;
+        }
+        to{
+            box-shadow: 0 0 0px #fff;
+        }
+    }

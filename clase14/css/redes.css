@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.secciones{
+    width: 640px;
+    margin: 64px auto;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /*estado inicial*/
+/*    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards; */
+}
+    .secciones img{
+        width: 56px;
+    }
+    #insta{
+        opacity: 0;
+        animation: fade-in 1.5s forwards;
+    }
+    #face{
+        opacity: 0;
+        animation: fade-in 1.5s 750ms forwards;
+    }
+    #twit{
+        opacity: 0;
+        animation: fade-in 1.5s 1.5s forwards;
+    }
+    #link{
+        opacity: 0;
+        animation: fade-in 1.5s 2.25s forwards;
+    }
+    #reddit{
+        transform: scale(6);
+        opacity: 0;
+        animation: zoom-out 1s 2s forwards,
+                   fade-in 1s 2s forwards;
+    }
+    #youtube{
+        /*estado inicial*/
+        opacity: 1;
+        transform: scale(.1);
+        animation: marce 4s 3s forwards;
+    }
+    #insta2{
+        animation: rotar 2s linear infinite;
+    }
+
+/* animaciones */
+/* @keyframes nombre  */
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes zoom-out {
+    from{
+        transform: scale(6);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes marce {
+    0%{
+        opacity: 1;
+        transform: scale(.1);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

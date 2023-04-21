@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #353538;
+    font-family: Helvetica Neue;
+    color: #E9DABB;
+}
+h1{
+    font-weight: 300;
+    text-align: center;
+}
+header{
+    width: 780px;
+    height: 366px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+    #c1, #c2, #c3, #c4, #c5,
+    #c6, #c7, #c8, #c9, #c10{
+        position: absolute;
+    }
+    #c1{
+        animation: rotar 30s infinite;
+    }
+    #c2{
+        animation: rotar 40s infinite;
+    }
+    #c3{
+        animation: rotar 50s infinite;
+    }
+    #c4{
+        animation: rotar 60s infinite;
+    }
+    #c5{
+        animation: rotar 70s infinite;
+    }
+    #c6{
+        animation: rotar 80s infinite;
+    }
+    #c7{
+        animation: rotar 90s infinite;
+    }
+    #c8{
+        animation: rotar 120s infinite;
+    }
+    #c9{
+        animation: rotar 140s infinite;
+    }
+    #c10{
+        animation: rotar 160s infinite;
+    }
+    #logo{
+        width: 112px;
+    }
+    #octocat{
+        position: absolute;
+        top: 64px;
+        left: 144px;
+        width: 152px;
+        animation: flotar 15s linear infinite;
+    }
+
+    @keyframes rotar{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes flotar{
+        from{
+            top: 64px;
+            left: 144px;
+        }
+        50%{
+            top: 128px;
+            left: 136px;
+        }
+        to{
+            top: 64px;
+            left: 144px;
+        }
+    }
