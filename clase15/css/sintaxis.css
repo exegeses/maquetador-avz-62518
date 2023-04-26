@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* globales */
+body {
+  background-color: #e3e3e3;
+  color: #3c3c3c;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+header {
+  background-color: #3c3c3c;
+}
+header div {
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+header div a img {
+  width: 64px;
+}
+
+/* main */
+main {
+  width: 1024px;
+  min-height: 512px;
+  margin: auto;
+  padding: 32px 0px;
+}
+main h1 {
+  border-left: 8px solid #e5608c;
+  padding: 24px;
+}
+
+#botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 64px 0px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin: 0px 12px;
+}
+
+.btn-violeta {
+  background-color: #9203b4;
+  color: #fff;
+  border: 1px solid #370144;
+}
+.btn-violeta:hover {
+  background-color: #72058b;
+  color: #fff;
+  border: 1px solid #370144;
+}
+
+.btn-verde {
+  background-color: #059a05;
+  color: #fff;
+  border: 1px solid #015a01;
+}
+
+/* footer */
+footer {
+  background-color: #3c3c3c;
+}
+footer div {
+  height: 160px;
+  width: 1024px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+footer div a img {
+  width: 48px;
+}
+
+/*# sourceMappingURL=sintaxis.css.map */

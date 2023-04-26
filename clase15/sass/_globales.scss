@@ -1,0 +1,15 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* globales */
+body{
+  background-color: $light;
+  color: $dark;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+}
+a{
+  text-decoration: none;
+}

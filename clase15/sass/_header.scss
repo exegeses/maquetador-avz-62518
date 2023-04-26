@@ -1,0 +1,13 @@
+/* header */
+header{
+  background-color: $dark;
+  div{
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    a img{
+      width: 64px;
+    }
+  }
+}

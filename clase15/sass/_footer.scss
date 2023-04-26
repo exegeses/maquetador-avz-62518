@@ -1,0 +1,14 @@
+/* footer */
+footer{
+  background-color: $dark;
+  div{
+    height: 160px;
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    a img{
+      width: 48px;
+    }
+  }
+}

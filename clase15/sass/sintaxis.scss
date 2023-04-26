@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;600&display=swap');
+
+//##### variables
+$dark: #3c3c3c;
+$light: #e3e3e3;
+$white: #fff;
+$pink: #e5608c;
+
+@import "globales";
+@import "header";
+
+//#### mixins
+@mixin centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin colorear( $fondo, $texto, $borde ){
+    background-color: $fondo;
+    color: $texto;
+    border: 1px solid $borde;
+}
+
+
+/* main */
+main{
+  width: 1024px;
+  min-height: 512px;
+  margin: auto;
+  padding: 32px 0px;
+    h1{
+      border-left: 8px solid $pink;
+      padding: 24px;
+    }
+}
+
+  #botones{
+    @include centrar;
+    margin: 64px 0px;
+  }
+
+  .btn{
+      padding: 12px 24px;
+      border-radius: 8px;
+      margin: 0px 12px;
+  }
+  .btn-violeta{
+    @include colorear(#9203b4, #fff, #370144 );
+      &:hover{
+        @include colorear(#72058b, #fff, #370144 );
+      }
+  }
+  .btn-verde{
+    @include colorear(#059a05, #fff, #015a01,)
+  }
+  
+
+@import "footer";
